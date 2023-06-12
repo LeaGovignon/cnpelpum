@@ -1,0 +1,200 @@
+/*Chargement de fichiers de caractères personnalisés*/
+@font-face {
+    font-family: 'carpathe';
+    src: url('../fonts/carpathe/carpathe.woff2') format('woff2'),
+         url('../fonts/carpathe/carpathe.woff') format('woff');
+    font-style: normal; /*ou italic*/
+
+    font-family: Onsdsyx;
+src: url('../fonts/onsdsyx/Onsdsyx-Avocat.ttf') format('ttf'),
+
+    font-family: edition;
+     src: url('../fonts/edition/Edition-Contextual50.otf') format('otf'),
+    font-family: 'infini';
+    scr: url('../fonts/infini/infini-romain.woff') format('woff');;
+}
+
+h1{
+	font-family: edition;
+
+text-align: center;
+font-weight: 300;
+font-size: 30px;
+/*border-style: dotted;*/
+margin-top: 0%;
+margin-bottom: 0%;
+color: black;
+}
+
+h2{
+	margin: 0%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3{
+	font-family: edition;
+	text-align: center;
+	font-size: 12pt;
+	margin-top: 0%;
+
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	background: rgb(255,255,255);
+/*background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(32,240,8,1) 10%, rgba(255,255,255,1) 20%, rgba(255,0,246,1) 30%, rgba(255,255,255,1) 40%, rgba(255,237,0,1) 50%, rgba(255,255,249,1) 60%);*/
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 355, 0);
+}
+
+header{
+	width: 100%;
+	/*grid-template-columns: repeat(3, 1fr);*/
+	padding: 10px;
+	background-color: white;
+}
+nav{
+	display: grid;
+	/*grid-template-columns: repeat(3, 1fr);*/
+	grid-template-columns: 1fr 4fr 1fr;
+	font-family: infini;
+	color: rgb(0, 355, 0);
+}
+
+/*mobile*/
+@media(max-width:767px) { 
+
+.homepage{
+	/*display: grid;
+	grid-template-columns: 100%;*/
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: gainsboro;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+
+	overflow-y: auto;
+	overflow-x: auto;
+}
+/*height: 100%;*/
+
+
+.projet-grille{
+	margin-top: 0px;
+	
+   /* border: solid 4px Red;*/
+   /*padding: 10px;*/
+ 
+   width: 100vw;
+   height: auto;
+}
+
+.img-content{
+	width: 100%;
+}
+.content{
+	height: auto;
+	width: calc(100vw - 40px);
+    overflow-y : auto;
+     /* border     : solid 4px Green; */
+      font-family: infini;
+      font-size: 20px;
+     /* background-color: rgb(120, 355, 0);*/
+      padding-right: 20px;
+       padding-left: 20px;
+      border-right: dotted red 8px;
+
+} 
+} /*fin version mobile*/
+
+
+
+@media(min-width:768px) {
+/* Reset des marges intérieures et extérieures */
+
+.top{
+	position: fixed;
+	display: block;
+	background-color: white;
+	margin: 0px;
+}
+
+.infos{
+	display: grid;
+	grid-template-columns: 500px;
+	padding: 10px;
+	font-family: infini;
+	color: rgb(0, 255, 0);
+}
+
+.creditspage{
+	display: grid;
+	grid-template-columns: 500px;
+	padding: 10px;
+	font-family: infini;
+	color: rgb(0, 255, 0);
+}
+
+.credits{
+	text-align: right;
+	margin-top: 0;
+
+}
+
+
+
+.homepage{
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+/*height: 100%;*/
+}
+
+.projet-grille{
+	/*height     : 100%;*/
+	margin-top: 50px;
+	width: 450px;
+	height: 700px;
+   /* border: solid 4px Red;*/
+   /*padding: 10px;*/
+}
+.content{
+	height: 98%;
+      overflow-y : auto;
+     /* border     : solid 4px Green; */
+      font-family: infini;
+      font-size: 20px;
+     /* background-color: rgb(120, 355, 0);*/
+      padding-right: 20px;
+       padding-left: 20px;
+      border-right: dotted red 8px;
+
+} 
+.citation{
+	font-weight: 700;
+	text-align: center;
+	 padding-bottom: 20px;
+	}
+
+.img-content{
+		width: 100%;
+		text-align: center;
+		border-left: 15px;
+}
+
+
+/* Spécifique à la page */
+.contenu_secret {
+	display: none;
+}
+
+} /*fin version ordi*/
+
+
